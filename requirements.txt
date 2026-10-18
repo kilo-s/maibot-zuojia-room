@@ -1,0 +1,2 @@
+# maibot-plugin-sdk is provided by the MaiBot host; do not downgrade it here.
+playwright>=1.48,<2

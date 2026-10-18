@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "id": "com.kilos.zuojia-room",
+  "version": "0.1.0",
+  "name": "作家助手拼字房",
+  "description": "作家助手拼字房助手：管理员私聊扫码授权，通过自然语言或拼字命令获取邀请和成员榜单，默认 LLM 优先、无房自动建房，支持聊天白名单与建房权限控制。",
+  "author": {
+    "name": "kilo-s",
+    "url": "https://github.com/kilo-s"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/kilo-s/maibot-zuojia-room"
+  },
+  "host_application": {
+    "min_version": "1.3.9",
+    "max_version": "1.3.99"
+  },
+  "sdk": {
+    "min_version": "2.14.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [{"type":"python_package","name":"playwright","version_spec":">=1.48,<2"}],
+  "capabilities": [
+    "send.text",
+    "send.image",
+    "chat.get_stream_by_user_id",
+    "llm.generate"
+  ],
+  "plugin_type": "game",
+  "i18n": {
+    "default_locale": "zh-CN"
+  }
+}

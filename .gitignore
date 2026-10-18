@@ -1,0 +1,11 @@
+*.dshclaim
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+config.toml
+**/auth*.json
+**/*state*.json
+*.log
+*.bak*
+.env*
