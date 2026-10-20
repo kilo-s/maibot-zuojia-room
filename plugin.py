@@ -140,7 +140,9 @@ class ZuojiaRoomConfig(PluginConfigBase):
         description="没有创建权限时的回复",
     )
     api_base_url: str = Field(
-        default="https://pcwrite.yuewen.com", description="作家助手 API 基础地址"
+        default="https://pcwrite.yuewen.com",
+        description="仅兼容旧配置的启用标记，不用于请求地址；留空会禁用房间查询。实际请求固定访问阅文官方域名，请勿修改。",
+        json_schema_extra={"hidden": True},
     )
     author_id: str = Field(
         default="", description="作家助手作者 ID（cauthorid），分享链接需要用到"

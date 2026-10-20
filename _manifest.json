@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "id": "com.kilos.zuojia-room",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "作家助手拼字房",
   "description": "作家助手拼字房助手：管理员私聊扫码授权，通过自然语言或拼字命令获取邀请和成员榜单，默认 LLM 优先、无房自动建房，支持聊天白名单与建房权限控制。",
   "author": {
@@ -27,7 +27,7 @@
     "chat.get_stream_by_user_id",
     "llm.generate"
   ],
-  "plugin_type": "game",
+  "plugin_type": "integration",
   "i18n": {
     "default_locale": "zh-CN"
   }
